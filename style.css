@@ -29,8 +29,13 @@ nav{
     margin-left: 120px;
     align-items: center;
 }
-.logo-name{
+.site-name{
     font-size: 24px;
+}
+.site-name:hover{
+    cursor: pointer;
+    color: #e25c8d;
+    transition: .1s;
 }
 .menu-items ul{
     display: flex;
@@ -38,6 +43,9 @@ nav{
 }
 .menu-items li{
     list-style: none;
+}
+.menu-items a:hover{
+    color: #ee5c91;   
 }
 .menu-items a{
     font-size: 16px;
@@ -61,6 +69,7 @@ nav{
 .influence-details{
     width: 60%;
     margin-left: 120px;
+    overflow: hidden;
 }
 .influence-info{
     margin-top: 120px;
@@ -80,6 +89,10 @@ button{
     border: none;
     display: inline-block;
     margin-top: 16px;
+    transition: .2s;
+}
+button:hover{
+    background-color: #787885;
 }
 button>a{
     text-decoration: none;
@@ -99,6 +112,11 @@ button>a{
     width: 80%;
     margin-top: 30px;
 }
+.influence-details img:hover{
+    transform: rotate(360deg);
+    transition: .9s transform;
+    cursor: pointer;
+}
 
 /*-----------------------------------
 logo part 
@@ -114,6 +132,11 @@ logo part
     width: 1110px;
     height: 110px;
     margin: 100px 165px 100px 165px;
+}
+.company-logos:hover{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(76, 76, 241),aqua);
+    border-radius: 10px;
 }
 
 /*---------------------------
@@ -140,6 +163,13 @@ logo part
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     padding: 14px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.collection img:hover{
+    transform: scale(2,1);
+    transition: .9s transform;
+    cursor: pointer;
 }
 .collection img{
     width: 300px;
@@ -171,4 +201,5 @@ logo part
     color: rgba(224, 44, 109, 0.87);
     position: absolute;
     left: 81%;
+    cursor: pointer;
 }
