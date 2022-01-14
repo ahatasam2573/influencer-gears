@@ -98,3 +98,19 @@ button>a{
     width: 80%;
     margin-top: 30px;
 }
+
+/*-----------------------------------
+logo part 
+-------------------------------------*/
+.company-logos{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 60px;
+    align-items: center;
+    border: 1px solid #f1eded;
+    border-left: none;
+    border-right: none;
+    width: 1110px;
+    height: 110px;
+    margin: 100px 165px 100px 165px;
+}
