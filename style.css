@@ -191,7 +191,8 @@ logo part
     color: #787885;
 }
 .rating{
-    padding-left: 10px;
+    padding-left: 8px;
+    font-size: 14px;
 }
 .see-more h5{
     font-style: normal;
@@ -237,8 +238,8 @@ footer{
     padding-top: 20px;
     margin-top: 100px;
 }
-footer h1,p,h5,span{
-    color: #ffffff;
+footer h1,#footer-info,h5,.space{
+    color: #ddd3d3;
 }
 footer h1{
     font-size: 24px;
