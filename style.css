@@ -37,6 +37,13 @@ nav{
     color: #e25c8d;
     transition: .1s;
 }
+.menu-button{
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    margin-left: 20px;
+}
 .menu-items ul{
     display: flex;
     margin-right: 120px;
@@ -67,7 +74,7 @@ nav{
    display: flex;
 }
 .influence-details{
-    width: 60%;
+    width: 100%;
     margin-left: 120px;
     overflow: hidden;
 }
@@ -105,14 +112,15 @@ button>a{
     margin-left: 5px;
 }
 .influencing-pic{
-    width: 440px;
-    height: 414px;
+    width: 30px;
+    height: 350px;
 }
-.influence-details img{
-    width: 80%;
+.influencer-details img{
+    margin-left: 80px;
+    width: 60%;
     margin-top: 30px;
 }
-.influence-details img:hover{
+.influencer-details img:hover{
     transform: rotate(360deg);
     transition: .9s transform;
     cursor: pointer;
@@ -253,3 +261,110 @@ footer p,h5{
     padding-right: 20px;
     padding-bottom: 30px;
 }
+
+/*---------------------------
+ Media Queries mobile devices
+-----------------------------*/
+@media only screen and (max-width:688px) {
+    .menu-button{
+        display: block;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .menu-items ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        height: 10vh;
+        width: 100%;
+    }
+    .menu-items li{
+        display: block;
+    }
+    .menu-items a{
+        font-size: 20px;
+    }
+    .container{
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .influence-details{
+        order: 1;
+    }
+    .company-logos{
+        width: 100%;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-collections{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .collections{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 10px;
+    }
+    .collection img{
+        width: 100%;
+    }
+    .full-guide{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
+/*--------------------------------------
+ Media Queries mobile devices 
+----------------------------------------*/
+@media only  screen and (min-width: 668px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+        display: block;
+        flex-direction: column-reverse;
+    }
+    .heading{
+        font-size: 25px;
+    }
+    .influence-details{
+        order: 1;
+    }
+    .company-logos{
+        width: 100%;
+    }
+    .logo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .popular-collections{
+        margin-bottom: 20px;
+    }
+    .collections{
+        display: block;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5px;
+    }
+    .collection{
+        width: 100%;
+    }
+    .collection img{
+        width: 80%;
+    }
+    .full-guide{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 10px;
+    }
+}
+
